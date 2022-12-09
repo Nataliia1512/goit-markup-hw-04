@@ -218,7 +218,7 @@ body {
 }
 .button:hover,
 .button:focus {
-background-color: var(--accent-color);
+background-color: #188CE8;
 }
 
 /*button-portfolio*/
@@ -421,6 +421,7 @@ width: 270px;
 .team-media .media-link:hover,
 .team-media .media-link:focus {
    background-color: var(--accent-color);
+   color: var(--hero-color);
 }
 .team-icons:hover,
 .team-icons:focus {
@@ -438,26 +439,25 @@ width: 270px;
     display: flex;
 }
 
-.customers-items .customers-box {
+.customers-items .customers-link {
     border: 1px solid var(--icons-color);
     padding: 16px 32px;
     
 
 }
-.customers-items .customers-box:first-child {
-    box-shadow: 0 4px 4px 0 var(--box-shadow-color);
-}
-.customers-items .customers-box:last-child {
-    box-shadow: 0 4px 4px 0 var(--box-shadow-color);
-}
+
 
 .customers-items .customers-box:not(:last-child) {
     margin-right: 30px;
 
 }
-.customers-box .customers-link  {
+.customers-items .customers-link  {
+    display: flex;
     height: 92px;
     width: 170px;
+
+    border: 1px solid var(--icons-color);
+    padding: 16px 32px;
 
     text-align: center;
     justify-content: center;
@@ -475,10 +475,11 @@ width: 270px;
     fill: var(--accent-color);
 }
 
-.customers-box:hover,
-.customers-box:focus
+.customers-link:hover,
+.customers-link:focus
 {
     border-color: var(--accent-color);
+    fill: var(--accent-color);
 }
 
 
@@ -548,7 +549,7 @@ width: 270px;
     margin-top: 0;
     margin-bottom: 20px;
    
-
+    font-weight: 700;
     font-size: 14px;
     line-height: 1.1;
     color: var(--hero-color);
@@ -623,15 +624,21 @@ background-color: var(--accent-color);
     margin-right: 30px;
     margin-bottom: 30px;
 } 
-.subjects-elements:hover,
-.subjects-elements:focus  {
+
+.subjects-link {
+    display: block;
+    text-decoration: none;
+} 
+
+.subjects-link:hover,
+.subjects-link:focus  {
     box-shadow: 0 4px 4px 0 var(--box-shadow-color);
 } 
 .subjects .subjects-img {
     display: block;  
 } 
 
-.subjects .subjects-title {
+ .subjects .subjects-title {
    margin-top: 0;
    margin-bottom: 4px;
 
@@ -642,6 +649,7 @@ background-color: var(--accent-color);
  .subjects .subjects-items {
     margin-top: 0;
     margin-bottom: 0;
+    color: var(--primary-text-color);
 } 
 
 .subjects .subjects-border {
